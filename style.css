@@ -22,7 +22,6 @@
     background-size: cover;
     position: relative;
     top: 305px;
-    
 }
 
 #tank {
@@ -54,13 +53,12 @@
 }
 
 .jump-animation {
-    animation: jump 0.3s;
-    border: 1px solid red
+    animation: jump 1.5s; 
 }
 
 @keyframes jump {
     0%{top: 305px}
-    50%{top: 160px}
-    75%{top: 130px}
+    50%{top: 90px}
+    75%{top: 120px}
     100%{top: 305px}
 }

@@ -14,26 +14,42 @@
 const hulk = document.querySelector('#hulk');
 const tank = document.querySelector('#tank');
 const score = document.querySelector('#score');
-// const jump = document.querySelector('jump-animation')
+
+
+
+
+
+//jump function here
+
 
 function jump() {
 console.log('jump working')
     hulk.classList.add('jump-animation');
     setTimeout(() => {
         hulk.classList.remove('jump-animation')
-    }, 200);
+    }, 900);
 
 }
 
-// jump();
+//hulk grunt function
 
-// document.addEventListener ('click', () => {
-//     jump();
-// })
+function grunt () {
+  
+}
+
+
+//hulk jump complete
+
 
 document.addEventListener('click', () => {
  console.log('click working')       
     jump();
+    
 });
 
 // console.log("working");
+
+
+
+
+// score here
