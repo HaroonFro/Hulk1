@@ -32,33 +32,50 @@
     position: relative;
     top: 205px;
     left: 700px;
-    animation: tank 2.3s infinite;
+    animation: tank 3s infinite;
 }
-
 @keyframes tank {
     0%{left: 700px;}
     100%{left: -200px;}
 }
 
-#score {
+/* #score {
     width: 80px;
     height: 21px;
-    border: 10px, solid, black;
+    border: 10px, solid, rgb(6, 7, 6);
     background-color: blue;
     left: 820px;
     text-align: center;
     font-size: larger;
     position: relative;
     top: -245px;
-}
+    text-decoration: double;
+    color:rgb(58, 246, 34) 
+} */
 
 .jump-animation {
-    animation: jump 1.5s; 
+    animation: jump 1s; 
 }
 
 @keyframes jump {
     0%{top: 305px}
     50%{top: 90px}
-    75%{top: 120px}
+    75%{top: 100px}
     100%{top: 305px}
+}
+
+
+#score {
+    position: absolute;
+    margin: auto;
+    left: 800px;
+    width: 80px;
+    height: 21px;
+    border: 10px, solid, rgb(6, 7, 6);
+    background-color: blue;
+    text-align: center;
+    font-size: larger;
+    text-decoration: double;
+    color:rgb(58, 246, 34)
+
 }
