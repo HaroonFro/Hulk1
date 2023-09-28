@@ -32,7 +32,12 @@
     position: relative;
     top: 205px;
     left: 700px;
-    animation: tank 3s infinite;
+   
+}
+
+.tank-animation{
+
+     animation: tank 3s infinite;
     animation-delay: 400ms;
 }
 @keyframes tank {
@@ -64,3 +69,35 @@
     75%{top: 100px}
     100%{top: 305px}
 }
+ body{
+    background-color: black;
+ }
+
+ button {
+    padding: 4vh;
+    border-radius: 70px;
+    text-decoration: double;
+    font-size: x-large;
+    color: black;
+    background-color: red;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 20%;
+
+ } 
+
+ .start {
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+ }
+
+ .hidden {
+    display: none;
+ }

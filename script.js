@@ -1,32 +1,40 @@
+function startGame() {
+
 
 
 const hulk = document.querySelector('#hulk');
 const tank = document.querySelector('#tank');
 const score = document.querySelector('#score');
-// const grunt = document.querySelector('#grunt');
+let button = document.querySelector('#button');
 
-//jump function here
+tank.classList.add('tank-animation')
+
+button.classList.add('hidden')
+
+tank.classList.remove('hidden')
+hulk.classList.remove('hidden')
+
 function jump() {
-// console.log('jump working')
+
     hulk.classList.add('jump-animation');
     setTimeout(() => {
         hulk.classList.remove('jump-animation')
     }, 800);
-    // hulk.classList.add('grunt');
+  
 
 }
 //hulk jump complete
 document.addEventListener('click', () => {
     jump();
-    // $('#grunt')[0].play();
+   
 });
 
 //score and collision here
 
 setInterval(() => {
 
-   const finalScore = score.innerHTML++;
-    // console.log('score working')
+//    const finalScore = score.innerHTML++;
+    
 
     const hulkTopPosition = parseInt(window.getComputedStyle(hulk)
          .getPropertyValue('top'));
@@ -34,8 +42,6 @@ setInterval(() => {
     const tankLeftPosition = parseInt(window.getComputedStyle(tank)
          .getPropertyValue('left'));
 
-    // console.log(tankLeftPosition);
-    // console.log(hulkTopPosition);
 
     //show tank only when value is positive 
 
@@ -65,4 +71,4 @@ if(tankLeftPosition < 80 && hulkTopPosition > 180) {
     }
    
 })
-
+}
