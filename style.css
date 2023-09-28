@@ -64,17 +64,3 @@
     75%{top: 100px}
     100%{top: 305px}
 }
-
-
-
-#game-over {
-    text-align: center;
-    text-justify: ;
-    text-decoration: double;
-    color:rgb(58, 246, 34);
-    margin: auto;
-    height: 100px;
-    width: 200px;
-    border: 2px solid black;
-    background-color: blue;
-} */

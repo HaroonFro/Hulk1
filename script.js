@@ -1,15 +1,4 @@
-//hulk jump grunt
-// const sound = ;
-// const audio = document.createElement('audio');
-// audio.autoplay = true;
 
-// audio.load();
-
-// audio.addEventListener ('load', funtion() {
-//     audio.play();
-// }, true);
-
-// audio.src = source;
 
 const hulk = document.querySelector('#hulk');
 const tank = document.querySelector('#tank');
@@ -45,8 +34,8 @@ setInterval(() => {
     const tankLeftPosition = parseInt(window.getComputedStyle(tank)
          .getPropertyValue('left'));
 
-    console.log(tankLeftPosition);
-    console.log(hulkTopPosition);
+    // console.log(tankLeftPosition);
+    // console.log(hulkTopPosition);
 
     //show tank only when value is positive 
 
@@ -61,36 +50,19 @@ if(tankLeftPosition < 80 && hulkTopPosition > 180) {
 
 
      alert(`Game Over! Your score ${finalScore}.`);
+    //    document.getElementById('game-over').innerHTML = `Game Over! Your Score ${finalScore}`
 
-     const replay = confirm('Do you want to play again?');
 
-     if(replay) {
-        jump();
-     } else {
-        alert('Better luck next time.')
-     }
+    //  const replay = confirm('Do you want to play again?');
+
+    //  if(replay) {
+    //     jump();
+    //  } else {
+    //     alert('Better luck next time.')
+    //     ;
+    //  }
      
     }
-
-
-    //collision here
    
 })
 
-    tankLeftPosition = 1000;
-
-    
-
-
-
-
-
-
-
-
-
-//hulk grunt function
-
-// document.getElementById('grunt');
-// play();
-  
