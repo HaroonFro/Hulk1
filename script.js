@@ -1,6 +1,8 @@
+
+
+
+
 function startGame() {
-
-
 
 const hulk = document.querySelector('#hulk');
 const tank = document.querySelector('#tank');
@@ -11,8 +13,10 @@ tank.classList.add('tank-animation')
 
 button.classList.add('hidden')
 
+score.classList.remove('hidden')
 tank.classList.remove('hidden')
 hulk.classList.remove('hidden')
+
 
 function jump() {
 
@@ -32,8 +36,8 @@ document.addEventListener('click', () => {
 //score and collision here
 
 setInterval(() => {
-
-//    const finalScore = score.innerHTML++;
+   
+   const finalScore = score.innerHTML++;
     
 
     const hulkTopPosition = parseInt(window.getComputedStyle(hulk)
@@ -45,7 +49,7 @@ setInterval(() => {
 
     //show tank only when value is positive 
 
-    if (tankLeftPosition < 0) {
+    if (tankLeftPosition < 80) {
         tank.style.display = 'none';
     } else {
         tank.style.display = '';
@@ -56,17 +60,25 @@ if(tankLeftPosition < 80 && hulkTopPosition > 180) {
 
 
      alert(`Game Over! Your score ${finalScore}.`);
+     
+     
+     
     //    document.getElementById('game-over').innerHTML = `Game Over! Your Score ${finalScore}`
 
+     const replay = confirm('Do you want to play again?');
 
-    //  const replay = confirm('Do you want to play again?');
 
-    //  if(replay) {
-    //     jump();
-    //  } else {
-    //     alert('Better luck next time.')
-    //     ;
-    //  }
+     if(replay) {
+        startGame();
+       
+        
+        
+      } else {
+        button.classList.remove('hidden')
+        score.classList.add('hidden')
+        tank.classList.add('hidden')
+        hulk.classList.add('hidden')
+    }
      
     }
    
