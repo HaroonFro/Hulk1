@@ -70,15 +70,16 @@ if(tankLeftPosition < 80 && hulkTopPosition > 180) {
 
      if(replay) {
         startGame();
+        
        
-        
-        
-      } else {
+            } else {
         button.classList.remove('hidden')
         score.classList.add('hidden')
         tank.classList.add('hidden')
         hulk.classList.add('hidden')
     }
+        
+  
      
     }
    

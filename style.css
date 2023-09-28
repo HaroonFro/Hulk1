@@ -37,7 +37,7 @@
 
 .tank-animation{
 
-     animation: tank 3s infinite;
+     animation: tank 2.3s infinite;
     animation-delay: 400ms;
 }
 @keyframes tank {
